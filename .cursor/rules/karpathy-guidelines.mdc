@@ -65,6 +65,33 @@ For multi-step tasks, state a brief plan:
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
 
----
+## 5. Principle Application Logging
 
-**These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+**Purpose:** To ensure transparency and traceability of guideline adherence, maintain a log of when and how specific principles are applied.
+
+**Log File:** A markdown file named `principle-log.md` will be maintained in the project's root directory.
+
+**Procedure for Logging a Principle Application:**
+When you apply a principle (e.g., "Simplicity First") to a specific task, request, or code change, append a new entry to the `principle-log.md` file using the following format:
+
+1.  **Open `principle-log.md`** in your editor.
+2.  **Navigate to the end of the file.**
+3.  **Append the following structure:**
+    ```markdown
+    - **Request/Task:** [Brief description of the user request or task]
+      - **Principle Applied:** [Name of the principle, e.g., "Simplicity First"]
+      - **Justification:** [Brief explanation of how the principle was applied and why it was necessary]
+      - **Date/Time:** [Timestamp of application]
+    ```
+    *   Replace the bracketed placeholders (`[...]`) with specific details.
+    *   Ensure the log entry is correctly formatted as a markdown list item.
+4.  **Save the file.**
+
+**Example Entry:**
+```markdown
+- **Request/Task:** Refactoring the user authentication module.
+  - **Principle Applied:** Simplicity First
+  - **Justification:** Removed unnecessary abstraction layers to make the code more readable and maintainable.
+  - **Date/Time:** 2026-04-28 14:30 UTC
+```
+This systematic logging ensures that the application of these guidelines is always documented.
